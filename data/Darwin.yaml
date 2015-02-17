@@ -2,11 +2,12 @@
   kafka::host:        '127.0.0.1'
   kafka::port:        '19092'
 
-  kafka::version: '0.8.2.0'
-
   kafka::configdir:   "%{::boxen::config::configdir}/kafka"
   kafka::datadir:     "%{::boxen::config::datadir}/kafka"
   kafka::logdir:      "%{::boxen::config::logdir}/kafka"
 
   kafka::executable:  "%{::boxen::config::homebrewdir}/bin/kafka-server-start.sh"
   kafka::servicename: 'dev.kafka'
+
+  kafka::package: "boxen/brews/kafka"
+  kafka::version: "0.8.2-boxen1"
