@@ -22,7 +22,7 @@ class kafka::package(
     $rendered_formula = '/tmp/boxen_kafka_formula.rb'
 
     file { $rendered_formula:
-      ensure  => $ensure,
+      ensure  => present,
       content => template('kafka/darwin/formula.rb.erb')
     }
 
