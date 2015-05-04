@@ -2,7 +2,7 @@
   kafka::ensure: 'present'
   kafka::enable: true
 
-  kafka::version: '0.8.2'
+  kafka::version: '0.8.2.1'
 
   kafka::broker_config:
     id: 0

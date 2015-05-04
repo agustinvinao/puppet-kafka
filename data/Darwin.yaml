@@ -10,4 +10,4 @@
   kafka::servicename: 'dev.kafka'
 
   kafka::package: "boxen/brews/kafka"
-  kafka::version: "0.8.2-boxen1"
+  kafka::version: "0.8.2.1-boxen1"
